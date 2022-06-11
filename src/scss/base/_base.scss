@@ -118,21 +118,24 @@ input[type="submit"] {
 }
 
 .container{
-	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
-	max-width: 1320px;
+	width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
 	
-	@media(max-width:1439px){
-		max-width: 1170px;
+	@media(max-width:1364px){
+		width: 1150px;
+		padding-left: 20px;
+	    padding-right: 20px;
+	}
+	@media(max-width:1199px){
+		width: 960px;
 	}
 	@media(max-width:1023px){
-		max-width: 708px;
+		width: 708px;
 	}
 	@media(max-width:767px){
 		max-width: 540px;
+		width: 100%;
 	}
 }
 .text-link{

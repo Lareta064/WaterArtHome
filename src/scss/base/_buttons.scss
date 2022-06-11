@@ -15,6 +15,12 @@
 	&:hover{
 		background-color: $dark-hover;
 	}
+	@media(max-width:1364px){
+		height: 45px;
+		line-height: 45px;
+		font-size: 14px;
+		min-width: 217px;
+	}
 }
 .btn-accent{
 	background-color: $accent;

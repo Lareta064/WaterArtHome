@@ -1,9 +1,11 @@
 .header-banner{
-	min-height: 868px;
+	height: 868px;
+	// height: 100vh;
 	background-color: #000;
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	&:after{
 		content: '';
 		position: absolute;
@@ -16,5 +18,9 @@
 	.container{
 		position: relative;
 		z-index: 2;
+	}
+	@media (max-width: 767px) {		
+		height: auto;
+		min-height: 100vh;
 	}
 }
