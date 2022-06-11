@@ -1,6 +1,6 @@
 .header{
-	position: fixed;
-	z-index: 10;
+	position: absolute;
+	// z-index: 2;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -35,7 +35,7 @@
 		@media(max-width:767px){
 			margin-left:unset;
 		}
-		.btn{
+		.btn,.btn-accent{
 			display: inline-block;
 			@media(max-width:1199px){
 				display: none;
@@ -99,13 +99,22 @@
 		&>*+*{margin-top: 4px;}
 		
 	}
-	&__col+.contacts-block__col{margin-left: 70px;}
+	.contacts-block__col+.contacts-block__col{margin-left: 70px;}
 	
 	@media(max-width:1023px){
-		&__col:first-child{display: none;}
-		&__col+.contacts-block__col{margin-left: 0}
+		.contacts-block__col:first-child{display: none;}
+		.contacts-block__col+.contacts-block__col{margin-left: 0}
 	}
 	
+}
+/*синий язычок в шапке */
+.header.header-inner{
+	.header-content{background-color: $dark;}
+	&>*, .text-link{color: #fff;}
+	.text-link--accent{color: $accent;}
+	.menu-toggle span,.menu-toggle span:after, .menu-toggle span:before{
+		background-color: #fff;
+	} 	
 }
 /*========GAMBURGER======*/
 .menu-toggle {
@@ -166,7 +175,7 @@
 }
 
 .menu-toggle.active span {
-	background-color: transparent;
+	background-color: transparent!important;
 }
 
 .menu-toggle.active span:after {
@@ -174,7 +183,7 @@
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
-	background-color: $dark;
+	background-color: #fff;
 }
 
 .menu-toggle.active span:before {
@@ -182,7 +191,7 @@
 	-webkit-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	background-color: $dark;
+	background-color: #fff;
 }
 @media(max-width:767px){
 	.menu-toggle{

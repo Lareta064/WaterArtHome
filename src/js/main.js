@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (){
 	/*============= menu toggle ===============*/
   const menuToggle = document.querySelector('.menu-toggle');
-//   const mobileMenu = document.querySelector('#mobile-menu');
+  const mobileMenu = document.querySelector('#mobile-menu');
   const overlayBlock = document.querySelector('#overlay');
   const bodyEl = document.body;
   
@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function (){
     if (this.classList.contains('active')) {
        
       this.classList.remove('active');
-    //   mobileMenu.classList.remove('active');
+      mobileMenu.classList.remove('active');
       overlayBlock.classList.remove('active');
       bodyEl.classList.remove('noscroll');
       
 
     } else {
-      this.classList.add('active');
-	    // mobileMenu.classList.add('active');
+        this.classList.add('active');
+	      mobileMenu.classList.add('active');
       	overlayBlock.classList.add('active');
       	bodyEl.classList.add('noscroll');
     
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function (){
     });
     window.addEventListener('resize', function () {
       menuToggle.classList.remove('active');
-    //   mobileMenu.classList.remove('active');
+      mobileMenu.classList.remove('active');
       overlayBlock.classList.remove('active');
       bodyEl.classList.remove('noscroll');
       
