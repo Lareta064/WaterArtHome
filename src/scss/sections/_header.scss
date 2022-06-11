@@ -1,0 +1,39 @@
+.header{
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	right: 0;
+	&-content{
+		background-color: #fff;
+		min-height: 110px;
+		padding-left: 50px;
+		padding-right: 50px;
+		display: flex;
+		align-items: center;
+		border-radius: 0px 0px 30px 30px;
+		.btn{margin-left: 55px;
+		}
+	}
+	.text-block{
+		margin-left: 70px;
+	}
+}
+.logo img{
+	width: 90px;
+	height: 60px;
+	object-fit: cover;
+}
+.contacts-block{
+	margin-left: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 70px;
+	
+	&__col{
+		display: flex;
+		flex-direction: column;
+		&>*+*{margin-top: 4px;}
+	}
+	
+}

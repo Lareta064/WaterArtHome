@@ -1,0 +1,24 @@
+.btn,.btn-accent{
+	display: inline-block;
+	min-width: 280px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: $ff2;
+	border-radius: 30px;
+	color: #fff;
+	background-color: $dark;
+	transition: .3;
+	text-align: center;
+	cursor:pointer;
+	&:hover{
+		background-color: $dark-hover;
+	}
+}
+.btn-accent{
+	background-color: $accent;
+	&:hover{
+		background-color: $accent-hover;
+	}
+}
