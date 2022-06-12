@@ -1,14 +1,114 @@
 .form-item{
+	position: relative;
+	
 	input{
 		display: block;
 		width: 100%;
 		background: #FFFFFF;
+		border:1px solid $accent;
 		border-radius: 10px;
 		height: 50px;
-		color: #000;
+		color: $dark;
 		font-size: 16px;
 		padding-left: 20px;
 		padding-right: 20px;
+		&::placeholder{color: $dark;}
 	}
 
+}
+input[type="checkbox"],input[type="radio"]{
+	position: absolute;
+	width: 0.01px;
+	height: 0.01px;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.label{
+	display: flex;
+	align-items: center;
+	span+p{margin-left: 30px;}
+	p{
+		font-size: 18px;
+		font-weight: 300;
+	}
+}
+.fake-checkbox{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	border: 1px solid $dark;
+	flex-shrink: 0;
+	background-color:#fff;
+	outline: 4px solid rgba(255,255,255,1); 
+    outline-offset: 0; 
+	transition: .2s;
+}
+input[type="radio"]:checked~.fake-checkbox,
+input[type="checkbox"]:checked~.fake-checkbox{
+	background-color: $dark;
+	outline-offset: -5px; }
+.page-form{
+	border: 1px solid $accent;
+	border-radius: 10px;
+	background-color: #fff;
+	display: flex;
+	input{color: $dark;}
+	.page-form__content{
+		padding: 60px 128px 60px 100px;
+		width: 70%;
+		max-width: 800px;
+		&>.text-20{margin-bottom: 50px;}
+	}
+	.page-form__decore{
+		width: 35%;
+		max-width: 380px;
+		border-radius: 10px;
+		position: relative;
+		z-index: 2;
+		background-color: $accent;
+		padding: 60px 50px;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.text-block{
+			position: relative;
+			z-index:3;
+			&>*+*{margin-top: 10px;}
+		}
+		.page-form__image{
+			position: absolute;
+			z-index: 2;
+			bottom: 0;
+			left: 0;
+			transform: translateX(-30%);
+			img{
+				width: 340px;
+				height: 371px;
+				object-fit: cover;
+			}
+		}
+	}
+	.form-wrapper{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap:20px;
+		row-gap:20px;
+		align-items: center;
+	}
+	
+}
+.checkbox-group +.form-wrapper{margin-top: 62px;}
+.agree-text{
+	font-size: 14px;
+	color: $accent;
+	font-weight: 300;
+}
+.checkbox-group--grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	row-gap:20px;
 }

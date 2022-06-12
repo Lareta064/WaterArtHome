@@ -101,6 +101,13 @@
 	padding: 50px 40px;
 	width: 40%;
 	max-width: 380px;
+	.form-item input{
+		border:1px solid #fff;
+		color: #000;
+		&::placeholder{
+			color: #000;
+		}
+	}
 	.form-item + .form-item{margin-top: 10px;}
 	.medium-20{color: #fff; margin-bottom: 50px; text-align: center;}
 	.form-btn{margin-top: 50px;}

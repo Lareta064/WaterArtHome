@@ -1,0 +1,28 @@
+.statistic{
+	padding-bottom: 50px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+	padding-top: 100px;
+	
+}
+.statistic-info{
+	display: flex;
+	justify-content: space-between;
+}
+.statistic-item{
+	text-align: center;
+	span{
+		display: block;
+		color: $accent;
+		font-size: 20px;
+	}
+	p{
+		font-family: $ff2;
+		font-size: 60px;
+		line-height: 1.2;
+		font-weight: 600;
+	}
+	span + p{margin-top: 5px;}
+	p + span{margin-top: 5px;}
+}
