@@ -2,7 +2,11 @@
 	
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: right;
+	background-position: right bottom;
+	@media (max-width: 767px) {
+		background-position: center 600px;
+		background-size: 200%;
+	}
 	
 	
 }

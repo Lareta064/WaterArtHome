@@ -1,0 +1,81 @@
+.step-card{
+	position: relative;
+	padding: 35px 50px;
+	border: 1px solid $dark;
+    border-radius: 10px;
+	width: calc((100% - 40px) / 3);
+	max-width: 380px;
+	&__img{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		img{
+			width: 150px;
+			height: 150px;
+			object-fit: cover;
+			@media(max-width:1199px){
+				width: 100px;
+				height: 100px;
+			}
+		}
+	}
+	&__num{
+		font-size: 60px;
+		line-height: 1.2;
+		color: $accent;
+		opacity: .34;
+		position: absolute;
+		top: 10px;
+		left: 20px;
+		font-weight: bold;
+		@media (max-width: 1199px) {
+			font-size: 42px;
+			left: 15px;
+		}
+	}
+	&__header{
+		font-size: 20px;
+		margin-bottom: 30px;
+		@media (max-width: 1199px) {
+			font-size:18px;
+			margin-bottom: 15px;
+			
+		}
+	}
+	&__body{
+		height: 57px;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;  
+		overflow: hidden;
+		font-weight: 300;
+		@media (max-width: 1199px) {
+			font-size: 14px;
+			line-height: 14px;
+			height: 48px;
+			
+		}
+	}
+	@media(max-width:1199px){
+		padding: 30px 10px 24px 25px;
+	}
+	@media(max-width:767px){
+		width: 100%;
+	}
+}
+.work-steps-cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap:20px;
+	column-gap:20px;
+	@media (max-width: 1199px) {
+		row-gap:10px;
+		column-gap:10px;
+	}
+	@media(max-width:767px){
+		justify-content: flex-start;
+	}
+
+}
