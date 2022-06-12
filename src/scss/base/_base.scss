@@ -138,6 +138,13 @@ input[type="submit"] {
 		width: 100%;
 	}
 }
+.text-20, .medium-20{
+	font-size: 20px;
+	line-height: 1.2;
+}
+.medium-20{
+	font-weight: 500;
+}
 .text-link{
 	display: inline-block;
 	cursor:pointer;
@@ -151,3 +158,34 @@ input[type="submit"] {
 }
 .text-dark{color: $dark!important;}
 .text-accent{color: $accent!important;}
+.icon-text{
+	display: flex;
+	align-items: center;
+	&>*+*{
+		margin-left: 40px;
+		@media(max-width:767px){
+			margin-left: 20px;
+		}
+	}
+	img{
+		flex-shrink:0;
+		object-fit: cover;
+		@media(max-width:767px){
+			font-size: 14px;
+			width: 30px;
+			height: 30px;
+		}
+	}
+	p{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.3;
+		font-family: $ff2;
+		@media(max-width:1364px){
+			font-size: 16px;
+		}
+		@media(max-width:767px){
+			font-size: 14px;
+		}
+	}
+}
