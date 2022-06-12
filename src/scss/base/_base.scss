@@ -160,9 +160,22 @@ input[type="submit"] {
 	}
 }
 section + section{padding-top: 150px;}
+.section-bg-image + section{
+	padding-top: 20px;
+}
+.section-bg-image{
+	padding-bottom: 100px;
+	padding-top: 100px;
+	@media (max-width: 1199px) {padding-top: 0;}
+
+
+}
 .text-20, .medium-20, .bold-20{
 	font-size: 20px;
 	line-height: 1.2;
+	@media (max-width: 767px) {
+		font-size: 18px;
+	}
 }
 .medium-20{
 	font-weight: 500;

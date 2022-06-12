@@ -1,4 +1,4 @@
-section.statistic(style="background-image: url(./img/decore-bg.png")
+section.statistic.section-bg-image(style="background-image: url(./img/decore-bg.png")
 	.container
 		.statistic-info
 			.statistic-item
@@ -65,15 +65,20 @@ section.statistic(style="background-image: url(./img/decore-bg.png")
 						
 						.form-btn
 							button.btn-accent(type="submit" ) Получить консультацию
+						
+						//======текст согласие для планшетной версии, скрыт на мобилках и десктопах ==========
+						.agree-text.visible-tablet
+							p Заполняя форму, Вы даете согласие на обработку персональных данных
 			
 			//======= правая часть с картинкой ============
 			.page-form__decore
-				.page-form__image
-					img(src="./img/decore.png", width="340" alt="img")
-
 				.text-block
 					.medium-20 Закажите до конца недели
 					.text-18 очистку скважины или замену насоса в скважине
+				
+				.page-form__image
+					img(src="./img/decore.png", width="340" alt="img")
+				
 				.text-block.text-right
 					.text-18 и получите
 					.bold-20.text-upper Видеодиагностику бесплатно
