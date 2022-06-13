@@ -72,10 +72,58 @@ document.addEventListener("DOMContentLoaded", function (){
   const servicesTabs = document.getElementById('services-tabs');
   const priceTabs = document.getElementById('price-tabs');
   const priceTabContentDesktop = document.getElementById('price-tabs-desktop');
+  const priceTabContentMobile = document.getElementById('price-tabs-mobile');
   if (servicesTabs) {
     pageTabs(servicesTabs, servicesTabs);
   }
   if (priceTabs) {
     pageTabs(priceTabs, priceTabContentDesktop);
+    pageTabs(priceTabs, priceTabContentMobile);
   }
+
+  // ========= КАСТОМНЫЙ СЕЛЕКТ =============
+	const customSelect = document.querySelectorAll('.custom-select');
+	if(customSelect){	
+		
+	for(let item of customSelect){
+		item.addEventListener('click', function(e){
+			const thisList = item.querySelector('.select-list');
+			const thisInput = item.querySelector('input');
+			const thisIconArrow = item.querySelector('.select-icon');
+			const thisListItem = item.querySelectorAll('li');
+			const thisField = item.querySelector('.select-field');
+
+			if(e.target == thisField){
+
+				if(thisList.classList.contains('visible')){
+					thisList.style.maxHeight = 0 + "px";
+					thisList.classList.remove('visible');
+					thisIconArrow.classList.remove('rotate');
+					
+				}else{
+					thisList.classList.add('visible');
+					thisList.style.maxHeight = thisList.scrollHeight + "px";
+					thisIconArrow.classList.add('rotate');
+				}				
+			}
+
+			if(e.target.tagName == 'LI'){
+				for(let item of thisListItem){
+					item.classList.remove('current');
+				}
+				const curItemtext = e.target.textContent;
+			  thisField.textContent = curItemtext;
+        // console.log(thisInput.value);
+				e.target.classList.add('current');
+				thisList.style.maxHeight = 0 + "px";
+				thisList.classList.remove('visible');
+				thisIconArrow.classList.remove('rotate');
+			}
+		});
+	}
+}
+
+
+
+
 });/*закрываем самую первую строчку, загрузка страницы */
