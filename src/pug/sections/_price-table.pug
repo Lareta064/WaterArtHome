@@ -1,0 +1,249 @@
+section.prices
+	.container
+		.h2 актуальные цены
+		.column-grid
+			.column-grid__left
+				#price-tabs.price-tabs
+					.price-tab-btn
+						.tabs-button
+							.tabs-button__item.active(data-role="1")
+								a(href="#!") Очистка скважин
+							.tabs-button__item(data-role="2")
+								a(href="#!") Годовое обслуживание
+							.tabs-button__item(data-role="3")
+								a(href="#!") Замена насосов
+							.tabs-button__item(data-role="4")
+								a(href="#!") Замена насосов ЭЦВ
+							.tabs-button__item(data-role="5")
+								a(href="#!") Ремонт скважин
+							.tabs-button__item(data-role="6")
+								a(href="#!") Гидродинамическая промывка водой
+							.tabs-button__item(data-role="7")
+								a(href="#!") Подъем насоса из скважин и колодцев
+				
+					//======== эти вкладки для табов отображаются на моб версии. Контент для отображения на десктоп версии - ниже.  Пришлось дублировать из-за непоследовательного дизайна ========================
+					.table
+						.table-head
+							p Вид работ
+							p Стоимость, руб
+					
+						.tabs-content-wrapper#price-tabs-mobile
+							//======== контент для вкладки #1 =================
+							.tabs-content.table-body.active(data-content="1")
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Видеодиагностика
+									p 5 000
+								.table-row
+									p Гидроудар
+									p 3 000
+								.table-row
+									p Химочистка реагентами
+									p 5 000
+								.table-row
+									p Замена насоса
+									p от 9 000
+								.table-row
+									p Изменение действующей схемы
+									p 4 000
+								.table-row
+									p Регулировка реле, замена гидробака
+									p от 3 000
+								.table-row
+									p Итого в комплексе при глубине скважины до 40 метров
+									p от 13 000
+								.table-row
+									p Итого в комплексе при глубине скважины до 70 метров
+									p от 19 000
+								.table-row
+									p Итого в комплексе при глубине скважины до 110 метров
+									p от 24 000
+							
+							//======== контент для вкладки #2 =================
+							.tabs-content.table-body(data-content="2")
+								.table-row
+									p Аварийный выезд
+									p 15 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+							
+							//======== контент для вкладки #3 =================
+							.tabs-content.table-body(data-content="3")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+							
+							//======== контент для вкладки #4 =================
+							.tabs-content.table-body(data-content="4")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+							
+							//======== контент для вкладки #5 =================
+							.tabs-content.table-body(data-content="5")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+							
+							//======== контент для вкладки #6 =================
+							.tabs-content.table-body(data-content="6")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+							
+							//======== контент для вкладки #7 =================
+							.tabs-content.table-body(data-content="7")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								
+					
+					
+				.payment-block-wrapper
+					.h3 Способы оплаты
+					.payment-block 
+						.h4 Для физических лиц
+						.payment-types
+							a(href="#").payment-item
+								img(src="./img/ic-money.png", width="50" alt="alt")
+								p Наличными при получении
+							
+							a(href="#").payment-item
+								img(src="./img/ic-sber.png", width="50" alt="alt")
+								p Перевод на карту Сбербанка
+							
+							a(href="#").payment-item
+								img(src="./img/ic-card.png", width="50" alt="alt")
+								p Оплата по карте на&nbsp;сайте
+
+					.payment-block 
+						.h4 Для юридических лиц
+						.payment-types
+							.payment-item
+								img(src="./img/ic-rc.png", width="50" alt="alt")
+								p Расчетный <br>счет
+							
+							.payment-item
+								img(src="./img/ic-nalog.png", width="50" alt="alt")
+								p Оплата с НДС и без НДС
+				
+			.column-grid__right
+				.table
+					.table-head
+						p Вид работ
+						p Стоимость, руб
+					
+					//======== эти вкладки для табов отображаются на десктопе ============= 
+					.tabs-content-wrapper#price-tabs-desktop
+						
+						//======== контент для вкладки #1 =================
+						.tabs-content.table-body.active(data-content="1")
+							.table-row
+								p Аварийный выезд
+								p 5 000
+							.table-row
+								p Видеодиагностика
+								p 5 000
+							.table-row
+								p Гидроудар
+								p 3 000
+							.table-row
+								p Химочистка реагентами
+								p 5 000
+							.table-row
+								p Замена насоса
+								p от 9 000
+							.table-row
+								p Изменение действующей схемы
+								p 4 000
+							.table-row
+								p Регулировка реле, замена гидробака
+								p от 3 000
+							.table-row
+								p Итого в комплексе при глубине скважины до 40 метров
+								p от 13 000
+							.table-row
+								p Итого в комплексе при глубине скважины до 70 метров
+								p от 19 000
+							.table-row
+								p Итого в комплексе при глубине скважины до 110 метров
+								p от 24 000
+						
+						//======== контент для вкладки #2 =================
+						.tabs-content.table-body(data-content="2")
+							.table-row
+								p Аварийный выезд
+								p 15 000
+							.table-row
+								p Аварийный выезд
+								p 5 000
+							.table-row
+								p Аварийный выезд
+								p 5 000
+							.table-row
+								p Аварийный выезд
+								p 5 000
+						
+						//======== контент для вкладки #3 =================
+						.tabs-content.table-body(data-content="3")
+							.table-row
+								p Аварийный выезд
+								p 25 000
+							.table-row
+								p Аварийный выезд
+								p 5 000
+							.table-row
+								p Аварийный выезд
+								p 5 000
+							.table-row
+								p Аварийный выезд
+								p 5 000
+						
+						//======== контент для вкладки #4 =================
+						.tabs-content.table-body(data-content="4")
+							.table-row
+								p Аварийный выезд
+								p 25 000
+						
+						//======== контент для вкладки #5 =================
+						.tabs-content.table-body(data-content="5")
+							.table-row
+								p Аварийный выезд
+								p 25 000
+						
+						//======== контент для вкладки #6 =================
+						.tabs-content.table-body(data-content="6")
+							.table-row
+								p Аварийный выезд
+								p 25 000
+						
+						//======== контент для вкладки #7 =================
+						.tabs-content.table-body(data-content="7")
+							.table-row
+								p Аварийный выезд
+								p 25 000
+							.table-row
+								p Аварийный выезд
+								p 5 000
+							

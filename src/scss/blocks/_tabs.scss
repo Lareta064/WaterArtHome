@@ -6,7 +6,7 @@
 	display: flex;
 	animation-name: opacity;
 	animation-fill-mode: forwards;
-	animation-duration: .7s;
+	animation-duration: .3s;
 	animation-timing-function: ease-in;
 	
 }
@@ -14,7 +14,7 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 40px;
-	@media (max-width: 1023px) {
+	@media (max-width: 1199px) {
 		margin-bottom: 30px;
 	}
 	.tabs-button__item{font-size: 18px;
@@ -22,14 +22,14 @@
 		&:hover{
 			opacity: .7;
 		}
-		@media (max-width: 1023px) {
+		@media (max-width: 1199px) {
 			font-size: 16px;
 		}
 	}
 	.tabs-button__item.active{opacity: 1;}
 	.tabs-button__item  +.tabs-button__item {
 		margin-left: 115px;
-		@media (max-width: 1023px) {
+		@media (max-width: 1199px) {
 			margin-left: 35px;
 		}
 		@media (max-width: 767px) {

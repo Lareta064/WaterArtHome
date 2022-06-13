@@ -70,7 +70,12 @@ document.addEventListener("DOMContentLoaded", function (){
     }
   }
   const servicesTabs = document.getElementById('services-tabs');
+  const priceTabs = document.getElementById('price-tabs');
+  const priceTabContentDesktop = document.getElementById('price-tabs-desktop');
   if (servicesTabs) {
-  pageTabs(servicesTabs, servicesTabs);
-}
+    pageTabs(servicesTabs, servicesTabs);
+  }
+  if (priceTabs) {
+    pageTabs(priceTabs, priceTabContentDesktop);
+  }
 });/*закрываем самую первую строчку, загрузка страницы */
