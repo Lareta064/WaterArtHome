@@ -138,6 +138,12 @@ input[type="submit"] {
 		margin-top: 70px;
 	}
 }
+.hide-tablet{
+	display: block;
+	@media (max-width: 1199px) {
+		display: none;
+	}
+}
 .container{
 	width: 1180px;
 	margin-left: auto;

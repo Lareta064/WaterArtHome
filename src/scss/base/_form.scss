@@ -13,6 +13,9 @@
 		padding-left: 20px;
 		padding-right: 20px;
 		&::placeholder{color: $dark;}
+		@media (max-width: 1199px) {
+			height: 45px;
+		}
 	}
 
 }

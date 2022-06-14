@@ -10,26 +10,35 @@
 	border-top: 1px solid $accent;
 	border-bottom: 1px solid $accent;
 	min-height: 450px;
+	@media(max-width:1199px){
+		padding: 40px;
+	}
 	
 	&:after{
 		content:'';
-		width: 40%;
+		width: 45%;
 		background-color: $accent;
 		position: absolute;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		border-radius: 10px 0 0 10px;
+		@media(max-width:1999px){
+			width: 40%;
+		}
 		
 	}
 }
 .assess-img{
-	width: 60%;
+	width: 55%;
 	position: absolute;
 	left: 0;
 	top: -60px;
 	height: 100%;
 	z-index: 1;
+	@media(max-width:1999px){
+		width: 60%;
+	}
 	img{
 		object-fit: contain;
 	}
@@ -41,16 +50,23 @@
 		height: 100%;
 		left: 0;
 		top:0;
+		z-index: 2;
 	}
 }
 .assess-content__grid{
 	display: flex;
+	// position: relative;
+	
 }
 .assess-left{
 	width: 68%;
 	padding-right: 120px;
 	position: relative;
 	z-index: 2;
+	@media (max-width: 1199px) {
+		width: 60%;
+		padding-right: 37px;
+	}
 }
 
 .assess-list{
@@ -113,6 +129,10 @@
 	@media (max-width: 1199px) {
 		column-gap: 40px;
 		.form-row .form-item{width: 165px;}
+		.form-row.form-row--bottom{
+			grid-template-columns: 220px;
+			row-gap:20px;
+		}
 	}
 	@media (max-width: 767px) {
 		.form-row .form-item{width: 240px;}
@@ -120,11 +140,25 @@
 }
 
 .assess-right{
-	width: 32%;
+	width: 45%;
 	padding-left: 32px;
 	position: relative;
-	z-index: 2;
-	position: relative;
+	position: absolute;
+	top: 60px;
+	bottom: 60px;
+	left: 60%;
+	right: 0;
+	padding:0;
+	padding-left: 50px;
+	z-index: 3;
+	
+	@media(max-width:1999px){
+		width: 32%;
+		// width: 270px;
+		top: 40px;
+		bottom: 40px;
+		padding-left: 40px;
+	}
 	
 }
 .assess-right__img{
@@ -136,20 +170,32 @@
 		width: 947px;
 		max-width: unset;
 		object-fit: contain;
+		
 	}
+	@media (max-width: 1199px) {
+		bottom: -32px;
+		left: 15px;
+		img{width: 750px;}
+	}
+}
+.assess-right__text{
+	max-width: 280px;
+	@media (max-width: 1199px) {max-width: 240px;}
 }
 .assess-right{
 	color: #fff;
 	.assess-right__top{
 		margin-bottom: 40px;
+		
 		.medium-20{
 			margin-bottom: 10px;
 		}
 	}
 	.assess-right__bottom{
+		
 		.text-18{margin-bottom: 10px;}
 	}
 	
-	.assess-right__top,.assess-right__bottom{position: relative; z-index: 2;
-	}
+	// .assess-right__top,.assess-right__bottom{position: relative; z-index: 2;
+	// }
 }
