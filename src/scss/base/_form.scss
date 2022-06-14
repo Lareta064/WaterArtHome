@@ -193,6 +193,12 @@ input[type="checkbox"]:checked~.fake-checkbox{
 	}
 	@media (max-width: 767px) {
 		font-size: 12px;
+		
+	}
+}
+.page-form .agree-text{
+	@media (max-width: 767px) {
+		
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}

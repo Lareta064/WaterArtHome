@@ -11,7 +11,10 @@
 	border-bottom: 1px solid $accent;
 	min-height: 450px;
 	@media(max-width:1199px){
-		padding: 40px;
+		padding: 40px 0;
+	}
+	@media(max-width:767px){
+		padding: 25px 0 0;
 	}
 	
 	&:after{
@@ -25,6 +28,12 @@
 		border-radius: 10px 0 0 10px;
 		@media(max-width:1999px){
 			width: 40%;
+		}
+		@media (max-width: 767px) {
+		 width: 100%;
+		 top:auto;
+		 height: 260px;
+		 border-radius: 0;
 		}
 		
 	}
@@ -42,6 +51,14 @@
 	img{
 		object-fit: contain;
 	}
+	@media(max-width:767px){
+		width: 100%;
+		top: unset;
+		bottom: 260px;
+		height: 550px;
+		z-index: 0;
+		img{max-width: unset;}
+	}
 	&:before{
 		content:'';
 		width: 100%;
@@ -55,7 +72,9 @@
 }
 .assess-content__grid{
 	display: flex;
-	// position: relative;
+	@media (max-width: 767px) {
+		display: block;
+	}
 	
 }
 .assess-left{
@@ -66,6 +85,11 @@
 	@media (max-width: 1199px) {
 		width: 60%;
 		padding-right: 37px;
+	}
+	@media (max-width: 767px){
+		width: 100%;
+		padding-right: 0;
+		padding-bottom: 40px;
 	}
 }
 
@@ -87,6 +111,12 @@
 	}
 	@media (max-width: 1199px) {
 		max-width: 360px;
+	}
+	@media (max-width: 767px) {
+		padding-left: 20px;
+		&__title{position: relative;
+			left: -20px;
+		}
 	}
 }
 .assess-list-block{
@@ -123,6 +153,10 @@
 		column-gap: 40px;
 		align-items: center;
 		.agree-text{color: $dark;}
+		@media (max-width: 767px) {
+			grid-template-columns: 240px;
+			row-gap:10px;
+		}
 	}
 	.form-row .form-item{width: 280px;}
 	.form-row +.form-row{margin-top: 20px;}
@@ -136,6 +170,7 @@
 	}
 	@media (max-width: 767px) {
 		.form-row .form-item{width: 240px;}
+
 	}
 }
 
@@ -154,10 +189,26 @@
 	
 	@media(max-width:1999px){
 		width: 32%;
-		// width: 270px;
+		
+	}
+	@media(max-width:1199px){
+		
 		top: 40px;
 		bottom: 40px;
 		padding-left: 40px;
+	}
+	@media(max-width:767px){
+		position: relative;
+		// background-color: $accent;
+		// overflow: hidden;
+		height: 260px;
+		width: 100%;
+		left: 0;
+		top: 0;
+		padding-top: 25px;
+		padding-bottom: 33px;
+		padding-left: 0;
+		
 	}
 	
 }
@@ -177,9 +228,20 @@
 		left: 15px;
 		img{width: 750px;}
 	}
+	@media (max-width: 767px) {
+		bottom: 40px;
+		left: auto;
+		right: -320px;
+		img{
+			width: auto;
+			height: 207px;
+		}
+	}
 }
 .assess-right__text{
 	max-width: 280px;
+	position: relative;
+	z-index: 2;
 	@media (max-width: 1199px) {max-width: 240px;}
 }
 .assess-right{
@@ -192,7 +254,7 @@
 		}
 	}
 	.assess-right__bottom{
-		
+		.text-upper{text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35); line-height: 1.2;}
 		.text-18{margin-bottom: 10px;}
 	}
 	
