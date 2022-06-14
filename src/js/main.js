@@ -122,8 +122,43 @@ document.addEventListener("DOMContentLoaded", function (){
 		});
 	}
 }
-
-
+/* portfolio slider main page */
+  let swiper = new Swiper(".portfolio-main", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed:800,
+      loop:true,
+      pagination: {
+        el: ".portfolio-main-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+				424: {
+					slidesPerView: 1.2,
+					spaceBetween: 10,
+				},
+        576: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
+        1200: {
+					slidesPerView: 4,
+					spaceBetween: 10,
+				},
+         1365: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+			}
+    });
 
 
 });/*закрываем самую первую строчку, загрузка страницы */

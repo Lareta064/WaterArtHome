@@ -1,0 +1,263 @@
+.assess{
+	.h2{margin-bottom: 40px;}
+	overflow: hidden;
+}
+
+.assess-content{
+	position: relative;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-top: 1px solid $accent;
+	border-bottom: 1px solid $accent;
+	min-height: 450px;
+	@media(max-width:1199px){
+		padding: 40px 0;
+	}
+	@media(max-width:767px){
+		padding: 25px 0 0;
+	}
+	
+	&:after{
+		content:'';
+		width: 45%;
+		background-color: $accent;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 10px 0 0 10px;
+		@media(max-width:1999px){
+			width: 40%;
+		}
+		@media (max-width: 767px) {
+		 width: 100%;
+		 top:auto;
+		 height: 260px;
+		 border-radius: 0;
+		}
+		
+	}
+}
+.assess-img{
+	width: 55%;
+	position: absolute;
+	left: 0;
+	top: -60px;
+	height: 100%;
+	z-index: 1;
+	@media(max-width:1999px){
+		width: 60%;
+	}
+	img{
+		object-fit: contain;
+	}
+	@media(max-width:767px){
+		width: 100%;
+		top: unset;
+		bottom: 260px;
+		height: 550px;
+		z-index: 0;
+		img{max-width: unset;}
+	}
+	&:before{
+		content:'';
+		width: 100%;
+		background-color: rgba(255,255,255, .5);
+		position: absolute;
+		height: 100%;
+		left: 0;
+		top:0;
+		z-index: 2;
+	}
+}
+.assess-content__grid{
+	display: flex;
+	@media (max-width: 767px) {
+		display: block;
+	}
+	
+}
+.assess-left{
+	width: 68%;
+	padding-right: 120px;
+	position: relative;
+	z-index: 2;
+	@media (max-width: 1199px) {
+		width: 60%;
+		padding-right: 37px;
+	}
+	@media (max-width: 767px){
+		width: 100%;
+		padding-right: 0;
+		padding-bottom: 40px;
+	}
+}
+
+.assess-list{
+	&__title{
+		font-size: 20px;
+		line-height: 1.16;
+		font-weight: 300;
+		margin-bottom: 30px;
+		@media (max-width: 1199px) {
+			font-size: 18px;
+		}
+	}
+	max-width: 680px;
+	.icon-text{
+		p{
+			font-family: $ff1;
+		}
+	}
+	@media (max-width: 1199px) {
+		max-width: 360px;
+	}
+	@media (max-width: 767px) {
+		padding-left: 20px;
+		&__title{position: relative;
+			left: -20px;
+		}
+	}
+}
+.assess-list-block{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 40px;
+	row-gap: 30px;
+	margin-bottom: 60px;
+	@media (max-width: 1199px) {
+		column-gap: 60px;
+		row-gap: 20px;
+		margin-bottom: 55px;
+		.icon-text{
+			&>*+*{margin-left: 10px;}
+			img{width: 35px;}
+		}
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 50px;
+	}
+	@media (max-width: 574px) {
+		row-gap: 10px;
+		grid-template-columns: 1fr;
+		.icon-text{
+			&>*+*{margin-left: 20px;}
+		}
+	}
+}
+
+.assess-form{
+	.form-row{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 40px;
+		align-items: center;
+		.agree-text{color: $dark;}
+		@media (max-width: 767px) {
+			grid-template-columns: 240px;
+			row-gap:10px;
+		}
+	}
+	.form-row .form-item{width: 280px;}
+	.form-row +.form-row{margin-top: 20px;}
+	@media (max-width: 1199px) {
+		column-gap: 40px;
+		.form-row .form-item{width: 165px;}
+		.form-row.form-row--bottom{
+			grid-template-columns: 220px;
+			row-gap:20px;
+		}
+	}
+	@media (max-width: 767px) {
+		.form-row .form-item{width: 240px;}
+
+	}
+}
+
+.assess-right{
+	width: 45%;
+	padding-left: 32px;
+	position: relative;
+	position: absolute;
+	top: 60px;
+	bottom: 60px;
+	left: 60%;
+	right: 0;
+	padding:0;
+	padding-left: 50px;
+	z-index: 3;
+	
+	@media(max-width:1999px){
+		width: 32%;
+		
+	}
+	@media(max-width:1199px){
+		
+		top: 40px;
+		bottom: 40px;
+		padding-left: 40px;
+	}
+	@media(max-width:767px){
+		position: relative;
+		// background-color: $accent;
+		// overflow: hidden;
+		height: 260px;
+		width: 100%;
+		left: 0;
+		top: 0;
+		padding-top: 25px;
+		padding-bottom: 33px;
+		padding-left: 0;
+		
+	}
+	
+}
+.assess-right__img{
+	position: absolute;
+	z-index: 1;
+	bottom: -55px;
+	left: 50px;
+	img{
+		width: 947px;
+		max-width: unset;
+		object-fit: contain;
+		
+	}
+	@media (max-width: 1199px) {
+		bottom: -32px;
+		left: 15px;
+		img{width: 750px;}
+	}
+	@media (max-width: 767px) {
+		bottom: 40px;
+		left: auto;
+		right: -320px;
+		img{
+			width: auto;
+			height: 207px;
+		}
+	}
+}
+.assess-right__text{
+	max-width: 280px;
+	position: relative;
+	z-index: 2;
+	@media (max-width: 1199px) {max-width: 240px;}
+}
+.assess-right{
+	color: #fff;
+	.assess-right__top{
+		margin-bottom: 40px;
+		
+		.medium-20{
+			margin-bottom: 10px;
+		}
+	}
+	.assess-right__bottom{
+		.text-upper{text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35); line-height: 1.2;}
+		.text-18{margin-bottom: 10px;}
+	}
+	
+	// .assess-right__top,.assess-right__bottom{position: relative; z-index: 2;
+	// }
+}
