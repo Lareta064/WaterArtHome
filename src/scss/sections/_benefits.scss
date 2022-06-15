@@ -1,0 +1,106 @@
+.benefits{
+	
+	&-content{
+		border: 1px solid #FAB536;
+		border-radius: 10px;
+		display: flex;
+		position: relative;
+		min-height: 481px;
+	}
+	&-content__img{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform:  translateX(-71%);
+		width: 42%;
+	}
+	&-left{
+		width: 48%;
+		flex-shrink:0;
+		padding: 60px 100px 90px;
+		
+	}
+	&-right{
+		width: 52%;
+		flex-shrink:0;
+		border-radius: 10px;
+		background-color: $accent;
+		color: #fff;
+		padding: 70px 60px 90px 100px;
+	}
+	&-content ul{
+		padding-top: 17px;
+	}
+	&-content ul li{
+		font-size: 20px;
+		font-weight: 400;
+		font-family: $ff2;
+		line-height: 1.12;
+		position: relative;
+		width: fit-content;
+		
+		&+li{
+			margin-top: 57px;
+		}
+	}
+	&-left li{padding-right: 40px;}
+	&-left li:after{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		content: '';
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		display: inline-block;
+		border: 1px solid $dark;
+		flex-shrink: 0;
+		background-color: $dark;
+		outline-offset: -5px;
+		outline: 4px solid rgba(255,255,255,1); 
+		 
+	}
+	&-left li:nth-child(even){padding-left: 50px;}
+	&-left li:nth-child(even):after{
+		width: 30px;
+		height: 30px;
+		outline: 8px solid rgba(255,255,255,1); 
+		outline-offset: -9px;
+	}
+	&-right .benefits-list{
+		display: flex;
+		justify-content: flex-end;
+	}
+	&-right ul{max-width: 400px; }
+	
+	&-right li{margin-left: auto;
+	}
+	&-right li{padding-left: 40px;}
+	&-right li:before{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		content: '';
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		display: inline-block;
+		border: 1px solid white; 
+		flex-shrink: 0;
+		background-color: white;
+		outline-offset: -5px;
+		outline: 4px solid $accent; 
+		 
+	}
+	&-right li:nth-child(2){padding-right: 60px;}
+	&-right li:nth-child(3){margin-left: 10px;}
+	&-right li:nth-child(4){margin-left: 20px;}
+	&-right li:nth-child(even):before{
+		width: 30px;
+		height: 30px;
+		outline: 8px solid $accent; 
+		outline-offset: -9px;
+	}
+}

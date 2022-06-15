@@ -160,5 +160,96 @@ document.addEventListener("DOMContentLoaded", function (){
 			}
     });
 
+    /* Review slider */
+  let swiperReview = new Swiper(".review-wrapper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed:800,
+      loop:true,
+      pagination: {
+        el: ".review-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+				424: {
+					slidesPerView: 1.2,
+					spaceBetween: 10,
+				},
+        576: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
+        1200: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				}
+			}
+    });
 
+    /**sertificates */
+    
+  let swiperSertificates = new Swiper(".sertificates-wrapper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed:800,
+      loop:true,
+      pagination: {
+        el: ".sertificates-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+				424: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+        576: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 10,
+				},
+        1023: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				}
+			}
+    });
+
+
+    /* Показать скрытый текст Секция О компании на Главной*/
+    const customTextBlocks = document.querySelectorAll('[data-text-block]');
+    if(customTextBlocks.length >0){
+      for(item of customTextBlocks){
+        const customTextHide = item.querySelector('[data-text-hide]');
+        const customTextShowBtn = item.querySelector('[data-text-btn]');
+        customTextShowBtn.addEventListener('click', function(){
+          if(this.classList.contains('btn-active')){
+            this.classList.remove('btn-active');
+            this.textContent = 'Подробнее'
+            // customTextHide.classList.remove('visible-block');
+            customTextHide.style.maxHeight = 0;
+          }
+          else{
+            this.classList.add('btn-active');
+            this.textContent = 'Скрыть'
+            // customTextHide.classList.add('visible-block');
+            customTextHide.style.maxHeight = customTextHide.scrollHeight + 'px';
+          }
+        });
+      }
+    }
 });/*закрываем самую первую строчку, загрузка страницы */

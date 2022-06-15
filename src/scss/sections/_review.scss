@@ -1,0 +1,11 @@
+.review{
+	.swiper-slide__item{
+		width: 380px;
+		@media (max-width: 1199px) {
+			width: auto;
+		}
+		@media (max-width: 767px) {
+			width: 220px;
+		}
+	}
+}

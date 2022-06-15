@@ -1,0 +1,81 @@
+.about{
+	position: relative;
+	&:before{
+		content: '';
+		background-image: url(../img/about.png);
+		background-size: contain;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40%;
+		bottom: -200px;
+		@media (max-width: 1199px) {
+			
+			bottom: unset;
+			height: 380px;
+			width: 420px;
+		}
+		@media (max-width: 767px) {
+			
+			
+			height: 200px;
+			width: 60%;
+			min-width:320px;
+		}
+	}
+}
+.sertificates-wrapper{
+	.swiper-slide__item{
+		width: 240px;
+		text-align: center;
+		p{
+			font-size: 18px;
+			font-weight: 300;
+			color: $dark;
+			padding-top: 10px;
+			line-height: 1.16;
+			max-width: 190px;
+			margin-left: auto;
+			margin-right: auto;
+			}
+		@media (max-width: 1199px) {
+			width: auto;
+			p{
+			font-size: 16px;
+			
+			padding-top: 20px;
+		}
+		}
+		@media (max-width: 767px) {
+			width: 200px;
+			img{
+				max-width: 160px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	}
+}
+[data-text-hide]{
+	padding-top: 40px;
+	max-height: 0;
+	overflow: hidden;
+	transition: .3s;
+}
+.custom-text{
+	p{
+		font-size: 20px;
+		line-height: 1.2;
+		color: $dark;
+		
+		&+p{
+			margin-top: 1em;
+		}
+	}
+	.btn, button, .btn-accent{margin-top: 50px;}
+	@media (max-width: 1199px) {
+		p{font-size: 18px;}
+		.btn, button, .btn-accent{margin-top: 40px;}
+			
+		}
+}

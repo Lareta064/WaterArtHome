@@ -1,0 +1,56 @@
+section.about
+	.container
+		.h2 О компании
+		
+		.about-text.custom-text(data-text-block)
+			.about-text__visible
+				p Вот уже 8 лет компания «Вода Дома» помогает решить людям вопрос с ремонтом скважин как частных, так и промышленных. Наш приоритет-решение любой Вашей проблемы со скважиной в кротчайшие сроки!
+
+				p.text-accent.text-bold Мы на связи 24/7
+
+				p Вы можете позвонить по номерам  +7 (903) 001-41-34  и  +7 (495) 877-38-14 или оставить заявку и мы свяжемся с Вами и за адекватную цену устраним Ваши неполадки.
+		
+			.about-text__hide(data-text-hide)
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			button.btn(data-text-btn) Подробнее
+		
+		
+section.sertificates
+	.container
+		//======================= slider sertificates ==================
+		.sertificates-wrapper.swiper
+			.swiper-wrapper
+				.swiper-slide
+					.swiper-slide__item
+						a(href="./img/doc.jpg" data-fancybox="sertificates")
+							img(src="./img/doc.jpg", alt="alt")
+						p Лучшая компания отрасли 2020
+				.swiper-slide
+					.swiper-slide__item
+						a(href="./img/doc.jpg" data-fancybox="sertificates")
+							img(src="./img/doc.jpg", alt="alt")
+						p Надежный партнер
+				.swiper-slide
+					.swiper-slide__item
+						a(href="./img/doc.jpg" data-fancybox="sertificates")
+							img(src="./img/doc.jpg", alt="alt")
+						p Лучшее предприятние отрасли 2021
+				.swiper-slide
+					.swiper-slide__item
+						a(href="./img/doc.jpg" data-fancybox="sertificates")
+							img(src="./img/doc.jpg", alt="alt")
+						p Рекомендация
+				.swiper-slide
+					.swiper-slide__item
+						a(href="./img/doc.jpg" data-fancybox="sertificates")
+							img(src="./img/doc.jpg", alt="alt")
+						p Надежный партнер
+			//========= навигация слайдера ============= 
+			.slider-nav
+				.swiper-button-prev
+				.sertificates-pagination.swiper-pagination
+				.swiper-button-next
