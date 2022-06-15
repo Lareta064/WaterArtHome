@@ -144,6 +144,12 @@ input[type="submit"] {
 		display: none;
 	}
 }
+.visible-tablet{
+	display: none;
+	@media (max-width: 1199px) {
+		display: block;
+	}
+}
 .container{
 	width: 1180px;
 	margin-left: auto;
