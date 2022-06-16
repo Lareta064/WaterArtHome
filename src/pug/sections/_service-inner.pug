@@ -3,16 +3,22 @@ section.services
 		.h2 Наши услуги
 		//=============== табы с карточками =============
 		
-		.services-tabs#services-tabs
-			.tabs-button
-				.tabs-button__item.active(data-role="1")
-					a(href="#!") Все услуги
-				.tabs-button__item(data-role="2")
-					a(href="#!") Очистка скважин
-				.tabs-button__item(data-role="3")
-					a(href="#!") Ремонт скважин
-				.tabs-button__item(data-role="4")
-					a(href="#!") Дополнительные услуги
+		.price-tabs#services-tabs
+			.custom-select
+				.custom-select__current
+					.select-icon
+					.select-field Очистка скважин
+					//- input(type="text" value="" readonly)
+				.price-tab-btn.select-list
+					ul.tabs-button
+						li.current.tabs-button__item.active(data-role="1") Очистка скважин
+							
+						li.tabs-button__item(data-role="2") Годовое обслуживание
+							
+						li.tabs-button__item(data-role="3") Замена насосов
+							
+						li.tabs-button__item(data-role="4") Замена насосов ЭЦВ
+						
 			
 			//=========== основной контент ==============
 			.tabs-content-wrapper
