@@ -1,0 +1,8 @@
+mixin navmenu(arg)
+	.desktop-navigation
+		.container
+			.header-menu
+				ul
+					each item in arg
+						li(class=(item.addcl === "active" ? "active" : ''))
+							a(href=""+ item.link) #{item.title}

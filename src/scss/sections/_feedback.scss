@@ -102,7 +102,12 @@
 	
 }
 .feedback .feedback-form{
-	@media (max-width: 1919px) {
+	width: 50%;
+	max-width: 585px;
+	@media (max-width: 1364px) {
+		// display: none;
+	}
+	@media (max-width: 1199px) {
 		display: none;
 	}
 }

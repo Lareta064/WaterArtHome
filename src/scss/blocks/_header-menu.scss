@@ -1,4 +1,12 @@
+.desktop-navigation{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 135px;
+	z-index: 3;
+}
 .header-menu{
+
 	&>*{
 		display: flex;
 		align-items: center;

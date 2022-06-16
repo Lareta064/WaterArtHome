@@ -26,12 +26,13 @@
 		background: rgba(46, 89, 132, .1);
 		min-height: 50px;
 		padding: 14px;
-		padding-left: 15px;
+		padding-left: 30px;
 		padding-right: 8px;
 		border:0 ;
 		p{
 			font-size: 20px;
 			font-weight: 300;
+			line-height: 1;
 			@media (max-width: 1199px) {
 			 font-size: 16px;
 			
@@ -47,7 +48,9 @@
 			
 			}
 		}
-		
+		@media (max-width: 1199px) {
+		padding-left: 15px;
+		}
 	}
 	.table-row +.table-row{margin-top: 10px;}
 }
@@ -134,7 +137,7 @@
 	}
 	.price-tab-btn .tabs-button__item +.tabs-button__item{
 		margin-left: 0; 
-		margin-top: 20px;
+		margin-top: 16px;
 		@media (max-width: 767px) {
 			margin-top: 10px;
 		}

@@ -43,7 +43,7 @@
 		span{display: inline-block;}
 		
 		&+li{
-			margin-top: 57px;
+			margin-top: 60px;
 		}
 	}
 
@@ -103,7 +103,7 @@
 		}
 	}
 	&-right li:nth-child(4) {
-		left:20px;
+		left:-20px;
 		@media (max-width: 1199px) {
 			left:0;
 		}
