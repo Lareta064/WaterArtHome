@@ -199,6 +199,8 @@ section + section{
 	@media (max-width: 767px){padding-bottom: 0; padding-top: 60px;}
 
 }
+
+.bg-accent *,.bg-accent p, .bg-accent .h2{color:#fff;}
 .text-20, .medium-20, .bold-20{
 	font-size: 20px;
 	line-height: 1.2;
@@ -260,6 +262,7 @@ section + section{
 		}
 	}
 }
+
 .header-banner__benefits .icon-text p{
 	font-weight: 500;
 	font-family: $ff2;
