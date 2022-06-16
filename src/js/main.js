@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (){
 	/*============= menu toggle ===============*/
-  const menuToggle = document.querySelector('.menu-toggle');
+  const menuToggle = document.querySelector('#menu-toggle-desk');
+  const menuToggleMob = document.querySelector('#mobile-menu-close');
   const mobileMenu = document.querySelector('#mobile-menu');
   const overlayBlock = document.querySelector('#overlay');
   const bodyEl = document.body;
@@ -11,22 +12,28 @@ document.addEventListener("DOMContentLoaded", function (){
     if (this.classList.contains('active')) {
        
       this.classList.remove('active');
-      mobileMenu.classList.remove('active');
-      overlayBlock.classList.remove('active');
-      bodyEl.classList.remove('noscroll');
+      // mobileMenu.classList.remove('active');
+      // overlayBlock.classList.remove('active');
+      // bodyEl.classList.remove('noscroll');
+
     } else {
         this.classList.add('active');
 	      mobileMenu.classList.add('active');
-      	overlayBlock.classList.add('active');
+      	
       	bodyEl.classList.add('noscroll');
       }
     });
-
+    menuToggleMob.addEventListener('click', function (e) {
+      mobileMenu.classList.remove('active');
+      menuToggle.classList.remove('active');
+     
+      bodyEl.classList.remove('noscroll');
+    });
     /*======== закрывать моб меню при ресайзе экрана ====== */
     window.addEventListener('resize', function () {
       menuToggle.classList.remove('active');
       mobileMenu.classList.remove('active');
-      overlayBlock.classList.remove('active');
+      
       bodyEl.classList.remove('noscroll');
     });
 
@@ -38,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function (){
        item.addEventListener('click', function () {
          menuToggle.classList.remove('active');
          mobileMenu.classList.remove('active');
-         overlayBlock.classList.remove('active');
+        
          bodyEl.classList.remove('noscroll');
        });
       }
@@ -228,8 +235,52 @@ document.addEventListener("DOMContentLoaded", function (){
 				}
 			}
     });
+    /* */
+    let videoReview = new Swiper(".video-slider", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed:800,
+      loop:true,
+      pagination: {
+        el: ".video-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+				
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+        1200: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				}
+			}
+    });
+    /* видео в модалке фэнсибокс */
+    $("#video-review").click(function() {
+      $.fancybox({
+          'padding'		: 0,
+          'autoScale'		: false,
+          'transitionIn'	: 'none',
+          'transitionOut'	: 'none',
+          'title'			: this.title,
+          'width'		: 680,
+          'height'		: 495,
+          'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+          'type'			: 'swf',
+          'swf'			: {
+              'wmode'		: 'transparent',
+            'allowfullscreen'	: 'true'
+          }
+        });
 
-
+      return false;
+    });
     /* Показать скрытый текст Секция О компании на Главной*/
     const customTextBlocks = document.querySelectorAll('[data-text-block]');
     if(customTextBlocks.length >0){

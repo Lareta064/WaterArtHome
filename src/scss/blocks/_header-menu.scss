@@ -32,15 +32,18 @@
 	}
 	&__nav  li+li{margin-top: 40px;}
 	&__nav li.active a{
-		color: $dark;
+		color: $accent;
 	}
 	&__contacts{
-		margin-top: 45px;
+		margin-top: 60px;
 		.text-link{
 			color: #fff;
 		}
 	}
-	&__btn{margin-top: 40px;}
+	&__btn{margin-top: 40px;
+		.btn, .btn-accent{width: 240px;} 
+		min-width: 240px;
+	}
 	@media(max-width:1199px){
 		display: block;
 		position: fixed;
@@ -48,7 +51,7 @@
 		left: 0;
 		bottom: 0;
 		width: 100%;
-		max-width: 768px;
+		
 		
 		z-index: 15;
 		background: rgba(46, 89, 132, 0.5);
@@ -74,10 +77,7 @@
 		}
 		
 	}
-	@media(max-width:767px){
-		padding: 20px;
-		padding-top: 60px;
-		overflow: hidden;
+	overflow: hidden;
 		overflow-y: auto;
 		scrollbar-width: none;
 		&::-webkit-scrollbar{
@@ -85,7 +85,19 @@
 			width: 0;
 			height: 0;
 		}
-
+	@media(max-width:767px){
+		padding: 20px;
+		padding-top: 60px;
+		&__contacts{
+		margin-top: 45px;
+		
+		}
+		.contacts-block__tel{
+			
+			.text-link{
+				font-size: 16px;
+			}
+		}
 		&__nav a{			
 			font-size: 18px;
 			line-height: 21px;			
@@ -93,4 +105,36 @@
 		&__nav  li+li{margin-top: 20px;}
 		}
 		.contacts-block__col+.contacts-block__col{margin-top: 20px;}
+}
+#mobile-menu-close{
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	z-index: 2;
+	@media (max-width: 767px) {
+	top: 12px;
+	}
+	
+}
+#mobile-menu-close.menu-toggle span {
+		background-color: transparent!important;
+	}
+
+#mobile-menu-close.menu-toggle span:after {
+		top: 0px;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		background-color: #fff;
+	}
+
+#mobile-menu-close.menu-toggle span:before {
+		bottom: 0px;
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		background-color: #fff;
+}
+#menu-toggle-desk.menu-toggle.active{
+	pointer-events: none;
 }
