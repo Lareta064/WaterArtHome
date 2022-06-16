@@ -57,10 +57,13 @@
 	}
 }
 [data-text-hide]{
-	padding-top: 40px;
+	padding-top: 0;
 	max-height: 0;
 	overflow: hidden;
 	transition: .3s;
+}
+div.about-text__visible[data-text-hide]{
+	padding-top: 40px;
 }
 .custom-text{
 	p{
@@ -76,6 +79,11 @@
 	@media (max-width: 1199px) {
 		p{font-size: 18px;}
 		.btn, button, .btn-accent{margin-top: 40px;}
+			
+		}
+	@media (max-width: 767px) {
+		
+		.btn, button, .btn-accent{margin-top: 30px;}
 			
 		}
 }

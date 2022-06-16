@@ -170,6 +170,10 @@
 	}
 	@media (max-width: 767px) {
 		.form-row .form-item{width: 240px;}
+		.form-row.form-row--bottom{
+			grid-template-columns: 240px;
+			.btn, .btn-accent{width: 240px;}
+		}
 
 	}
 }
