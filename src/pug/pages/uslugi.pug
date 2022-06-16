@@ -1,29 +1,27 @@
 extends ../layouts/layout.pug
 
 block content
-	include ../blocks/_mobile-menu
-	include ../sections/_header-banner
-	include ../sections/_header-main
-	main.main.pt-0
-		include ../sections/_statistic
-		include ../sections/_service		
-		include ../sections/_price-table
-		include ../sections/_assess-object		
-		include ../sections/_work-steps
-		include ../sections/_portfolio-slider
+	include ../blocks/_mobile-menu	
+	include ../sections/_header-inner
+	+navmenu([
+		{title: 'Главная', link: 'index.html'},
+		{title: 'Услуги', link: 'uslugi.html', addcl: 'active'},
+		{title: 'Цены', link: 'price.html'},
+		{title: 'Районы обслуживания', link: 'region.html'},
+		{title: 'Оформление заявки', link: 'zayavka.html'},
+		{title: 'Наши работы', link: 'portfolio.html'},
+		{title: 'Контакты', link: 'contacts.html'}
+		])
+	
+	main.inner-main
 		
-		include ../sections/_benefits
-		include ../sections/_video-rev
-		include ../sections/_feedback
-		include ../sections/_about
-		include ../sections/_faq
-		include ../sections/_present
-		include ../sections/_review
+		include ../sections/_service-inner		
+		
 	include ../sections/_footer
 		
 		
 	
 	
 block variables
-	-var title = "Главная";
-	-var bodyCl = "main-page";
+	-var title = "Услуги";
+	-var bodyCl = "inner-page";

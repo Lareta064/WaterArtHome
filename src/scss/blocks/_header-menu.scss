@@ -2,7 +2,10 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 135px;
+	top: 0;
+	height: 160px;
+	display: flex;
+	align-items: flex-end;
 	z-index: 3;
 }
 .header-menu{
@@ -23,10 +26,14 @@
 			color: $accent;
 		}
 	}
+	li.active a{
+		font-weight: 500;
+	}
 	@media(max-width:1199px){
 		display: none;
 	}
 }
+
 .mobile-menu{
 	display: none;
 	color: #fff;
