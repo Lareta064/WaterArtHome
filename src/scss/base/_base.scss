@@ -142,11 +142,26 @@ main{
 	.tabs-content-wrapper{
 		padding-top: 40px;
 		border-top: 1px solid rgba(46, 89, 132, .1);
+		@media(max-width:1364px){
+			padding-top: 30px;
+		}
+
 	}
 	.tabs-button{
 		margin-bottom: 40px;
+		@media(max-width:1364px){
+			margin-bottom: 30px;
+		}
 	}
 	.tabs-button__item  +.tabs-button__item {margin-left: 50px;}
+}
+.center-align-mobile{
+	@media (max-width: 767px) {
+		display: flex;
+		justify-content: center;
+		.btn, .btn-accent{width: 240px;}
+		text-align: center;
+	}
 }
 .pt-0{padding-top: 0!important;}
 .mt-100{
@@ -221,29 +236,7 @@ section + section{
 }
 
 .bg-accent *,.bg-accent p, .bg-accent .h2{color:#fff;}
-.text-20, .medium-20, .bold-20{
-	font-size: 20px;
-	line-height: 1.2;
-	@media (max-width: 767px) {
-		font-size: 18px;
-	}
-}
-.medium-20{
-	font-weight: 500;
-}
-.bold-20,.text-bold{
-	font-weight: bold;
-}
-.text-24{
-	font-size: 24px;
-	line-height: 1.167;
-	font-family: $ff2;
 
-}
-.text-upper{
-	text-transform: uppercase;
-}
-.text-right{text-align: right;}
 .text-link{
 	display: inline-block;
 	cursor:pointer;
