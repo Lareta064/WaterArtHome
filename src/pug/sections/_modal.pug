@@ -1,0 +1,18 @@
+//======== modal  ============
+.modal-frame(frame-modal="modal-form")
+	.modal-frame-content
+		.form-wrapper
+			.modal-frame-close(frame-close)
+				span +
+			
+			.modal-frame-title.text-center
+				.title-color Напишите нам
+			
+			form.form-send-message.w-100
+				.form-item
+					input(type="text" name="" placeholder="Имя")
+				.form-item
+					textarea(placeholder="Сообщение")
+				
+				.form-item.flex-end
+					button.btn.text-upper(type="submit") Отправить
