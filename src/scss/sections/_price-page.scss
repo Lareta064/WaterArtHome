@@ -18,12 +18,14 @@
 	}
 	.price-tab-btn .tabs-button {
 		margin-bottom: 0;
+		border-color: rgba(46, 89, 132, .5);
 		@media (max-width: 767px) {
 			margin-bottom: 30px;
 		}
 	}
 }
 .inner-page .payment{
+	
 	.payment-types{
 		@media(min-width:768px){
 			grid-template-columns: 1fr 1fr 1fr ;}
@@ -34,13 +36,16 @@
 		
 		display: flex;
 		column-gap: 20px;
-		align-items: flex-start;
-		max-width: 220px;
+		align-items: center;
+		max-width: 300px;
 		text-align: left;
 		}
 		
 		img{
 			flex-shrink: 0;
+			@media(min-width:1200px){
+				width: 100px;
+			}
 		}
 		p{
 			font-size: 18px;
@@ -48,7 +53,7 @@
 			@media(max-width:1199px){
 				font-size: 16px;
 			}
-			@media(max-width:1199px){
+			@media(max-width:767px){
 				font-size: 14px;
 			}
 		}

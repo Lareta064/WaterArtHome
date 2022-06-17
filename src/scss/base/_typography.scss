@@ -13,13 +13,17 @@
 	font-size: 24px;
 	line-height: 1.167;
 	color: $dark;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	font-weight: 700;
 	@media(max-width:1364px){
 		font-size: 20px;
+		margin-bottom: 40px;
 	}
 }
-
+.title-2{
+	font-weight: 600;
+	font-family: $ff2;
+}
 .h3{
 	font-family: $ff2;
 	font-style: normal;
@@ -93,4 +97,13 @@ section .h2{
 .text-right{text-align: right;}
 .mb-30{
 	margin-bottom: 30px;
+}
+.pt-100{
+	padding-top: 100px;
+	@media (max-width: 1199px) {
+		padding-top: 60px;
+	}
+	@media (max-width: 767px) {
+		padding-top: 70px;
+	}
 }
