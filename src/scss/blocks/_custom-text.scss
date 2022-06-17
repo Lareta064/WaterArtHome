@@ -1,0 +1,60 @@
+/*=======admin panel redaktor  text*/
+.custom-text{
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 300;
+	font-family: $ff2;
+	@media (max-width: 1199px) {font-size: 16px;}
+	h1{
+		font-family: $ff2;
+		font-size: 24px;
+		margin-bottom: 60px;
+		line-height: 1.2;
+		font-weight: 600;
+		text-transform: uppercase;
+		@media (max-width: 1199px) {
+			font-size: 20px;
+			margin-bottom: 40px;
+		}
+	}
+	strong{
+		font-weight: 500!important;
+		font-family: $ff2;
+		margin-top: 20px;
+		display: inline-block;
+		@media (max-width: 1199px) {margin-top: 0px;}
+	}
+	p{
+		font-size: 20px;
+		line-height: 1.2;
+		color: $dark;
+		font-family: $ff2;
+		font-weight: 300;
+		
+		&+p{
+			margin-top: 20px;
+		}
+	}
+	ul {
+		list-style-type: disc;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		margin-left: 25px;
+		li{
+			font-size: inherit;
+			line-height: inherit;
+		}
+		@media (max-width: 1199px) {margin-top: 20px; margin-bottom: 20px;}
+	}
+	.btn, button, .btn-accent{margin-top: 50px;}
+	@media (max-width: 1199px) {
+		p{font-size: 16px;}
+		.btn, button, .btn-accent{margin-top: 40px;}
+			
+		}
+	@media (max-width: 767px) {
+		
+		.btn, button, .btn-accent{margin-top: 30px;}
+			
+		}
+}
