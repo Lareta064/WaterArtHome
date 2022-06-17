@@ -101,44 +101,44 @@ document.addEventListener("DOMContentLoaded", function (){
 	const customSelect = document.querySelectorAll('.custom-select');
 	if(customSelect){	
 		
-	for(let item of customSelect){
-		item.addEventListener('click', function(e){
-			const thisList = item.querySelector('.select-list');
-			const thisInput = item.querySelector('input');
-			const thisIconArrow = item.querySelector('.select-icon');
-			const thisListItem = item.querySelectorAll('li');
-			const thisField = item.querySelector('.select-field');
+    for(let item of customSelect){
+      item.addEventListener('click', function(e){
+        const thisList = item.querySelector('.select-list');
+        const thisInput = item.querySelector('input');
+        const thisIconArrow = item.querySelector('.select-icon');
+        const thisListItem = item.querySelectorAll('li');
+        const thisField = item.querySelector('.select-field');
 
-			if(e.target == thisField){
+        if(e.target == thisField){
 
-				if(thisList.classList.contains('visible')){
-					thisList.style.maxHeight = 0 + "px";
-					thisList.classList.remove('visible');
-					thisIconArrow.classList.remove('rotate');
-					
-				}else{
-					thisList.classList.add('visible');
-					thisList.style.maxHeight = thisList.scrollHeight + "px";
-					thisIconArrow.classList.add('rotate');
-				}				
-			}
+          if(thisList.classList.contains('visible')){
+            thisList.style.maxHeight = 0 + "px";
+            thisList.classList.remove('visible');
+            thisIconArrow.classList.remove('rotate');
+            
+          }else{
+            thisList.classList.add('visible');
+            thisList.style.maxHeight = thisList.scrollHeight + "px";
+            thisIconArrow.classList.add('rotate');
+          }				
+        }
 
-			if(e.target.tagName == 'LI'){
-				for(let item of thisListItem){
-					item.classList.remove('current');
-				}
-				const curItemtext = e.target.textContent;
-			  thisField.textContent = curItemtext;
-        // console.log(thisInput.value);
-				e.target.classList.add('current');
-				thisList.style.maxHeight = 0 + "px";
-				thisList.classList.remove('visible');
-				thisIconArrow.classList.remove('rotate');
-			}
-		});
-	}
-}
-/* portfolio slider main page */
+        if(e.target.tagName == 'LI'){
+          for(let item of thisListItem){
+            item.classList.remove('current');
+          }
+          const curItemtext = e.target.textContent;
+          thisField.textContent = curItemtext;
+          // console.log(thisInput.value);
+          e.target.classList.add('current');
+          thisList.style.maxHeight = 0 + "px";
+          thisList.classList.remove('visible');
+          thisIconArrow.classList.remove('rotate');
+        }
+      });
+    }
+  }
+  /* portfolio slider main page */
   let swiper = new Swiper(".portfolio-main", {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -290,6 +290,79 @@ document.addEventListener("DOMContentLoaded", function (){
 
       return false;
     });
+   /* portfolio slider main page */
+  let work1 = new Swiper(".work1", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed:800,
+      loop:true,
+      pagination: {
+        el: ".work1-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+     /* portfolio slider main page */
+  let work2 = new Swiper(".work2", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed:800,
+      loop:true,
+      pagination: {
+        el: ".work2-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+    let work3 = new Swiper(".work3", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed:800,
+      loop:true,
+      pagination: {
+        el: ".work3-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+    let work4 = new Swiper(".work4", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed:800,
+      loop:true,
+      pagination: {
+        el: ".work4-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+    let work5 = new Swiper(".work5", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed:800,
+      loop:true,
+      pagination: {
+        el: ".work5-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+
     /* Показать скрытый текст Секция О компании на Главной*/
     const customTextBlocks = document.querySelectorAll('[data-text-block]');
     if(customTextBlocks.length >0){
