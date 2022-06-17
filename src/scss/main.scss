@@ -8,6 +8,7 @@
 
 //blocks
 @import "blocks/_header-menu.scss";
+@import "blocks/_modal.scss";
 //sections
 @import "sections/_header.scss";
 @import "sections/_header-banner.scss";
@@ -29,5 +30,7 @@
 @import "sections/_feedback.scss";
 @import "sections/_present.scss";
 @import "sections/_footer.scss";
+
+@import "blocks/_modal.scss";
   //ui
  @import "ui/_ui-navigation";

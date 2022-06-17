@@ -51,3 +51,32 @@ section .h2{
 
 
 }
+.text-20, .medium-20, .bold-20{
+	font-size: 20px;
+	line-height: 1.2;
+	@media (max-width: 767px) {
+		font-size: 18px;
+	}
+}
+.medium-20{
+	font-weight: 500;
+}
+.bold-20,.text-bold{
+	font-weight: bold;
+}
+.text-24{
+	font-size: 24px;
+	line-height: 1.167;
+	font-family: $ff2;
+	@media (max-width: 1199px) {
+		font-size: 18px;
+	}
+	@media (max-width: 767px) {
+		font-size: 16px;
+	}
+
+}
+.text-upper{
+	text-transform: uppercase;
+}
+.text-right{text-align: right;}

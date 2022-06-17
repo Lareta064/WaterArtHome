@@ -20,6 +20,7 @@
 	.tabs-button__item{font-size: 18px;
 		font-family: $ff2;
 		opacity: .5;
+		cursor:pointer;
 		&:hover{
 			opacity: .7;
 		}
@@ -44,5 +45,40 @@
 	}
 	100%{
 		opacity: 1;
+	}
+}
+.tabs-button{
+	@media(min-width:768px){
+		overflow: hidden;
+		overflow-x: auto;
+		scrollbar-width: none;
+		&::-webkit-scrollbar{
+			width: 0;
+			height: 0;
+			display: none;
+		}
+		.tabs-button__item{
+			flex-shrink: 0;
+			
+		}
+	}
+	@media(min-width:1200px){
+		scrollbar-width: thin;
+		scrollbar-color: rgb(250, 181, 54) rgba(46, 89, 132, .1) ;
+		&::-webkit-scrollbar{
+			// width: 100%;
+			height: 5px;
+			display: block;
+		}
+		&::-webkit-scrollbar-thumb{
+			width: 10px;
+			height: 5px;
+			border-radius: 5px;
+			background-color: rgb(250, 181, 54);
+		}
+		&::-webkit-scrollbar-track{
+			
+			background-color:rgba(46, 89, 132, .1);
+		}
 	}
 }

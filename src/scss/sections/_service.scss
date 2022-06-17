@@ -73,11 +73,66 @@
 		row-gap: 10px;
 		}
 }
+/***************service inner page*****************/
 .services-feedback{
 	.text-24{
 		margin-bottom: 60px;
 	}
 	.text-bold{
 		margin-bottom: 40px;
+	}
+	@media(max-width:1199px){
+		.text-24{
+			margin-bottom: 30px;
+			font-size: 18px;
+		}
+	.text-bold{
+		
+		margin-bottom: 20px;
+			font-size: 18px;
+		}
+	}
+	@media(max-width:767px){
+		.text-24{
+			margin-bottom:40px;
+			font-size: 16px;
+			text-align: center;
+		}
+		.text-bold{
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+}
+.inner-page .services-tabs{
+	.tabs-button{
+		
+		.tabs-button__item+.tabs-button__item{
+				margin-left: 51px;
+				
+			}
+		
+		@media (max-width: 1199px) {
+		.tabs-button__item+.tabs-button__item{
+				margin-left: 39px;
+				
+			}
+		}
+		@media(max-width:767px){
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+			.tabs-button__item+.tabs-button__item{
+				margin-left: 0;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+.services-tabs {
+	@media(min-width:767px){
+		.custom-select__current{display: none;}
+		.select-list{max-height: unset!important;}
 	}
 }

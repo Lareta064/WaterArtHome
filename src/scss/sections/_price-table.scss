@@ -131,9 +131,10 @@
 		@media (max-width: 1199px) {
 			padding: 30px 30px;
 			margin-bottom: 30px;
-			padding:0;			
-			border:0;
+						
+			
 		}
+		@media (max-width: 767px) {border:0;padding:0;}
 	}
 	.price-tab-btn .tabs-button__item +.tabs-button__item{
 		margin-left: 0; 

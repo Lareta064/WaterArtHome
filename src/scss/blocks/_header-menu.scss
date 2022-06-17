@@ -7,6 +7,9 @@
 	display: flex;
 	align-items: flex-end;
 	z-index: 3;
+	@media(max-width:1199px){
+		display: none;
+	}
 }
 .header-menu{
 
@@ -29,9 +32,7 @@
 	li.active a{
 		font-weight: 500;
 	}
-	@media(max-width:1199px){
-		display: none;
-	}
+	
 }
 
 .mobile-menu{

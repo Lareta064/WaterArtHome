@@ -220,3 +220,32 @@ input[type="checkbox"]:checked~.fake-checkbox{
 		row-gap:15px;
 	}
 }
+.modal-frame{
+	form{
+		.form-item + .form-item{
+			margin-top: 20px;
+		}
+		input{
+			border-color: transparent;
+		}
+		input::placeholder{
+			color: rgba(46, 89, 132, 0.5);
+		}
+		.form-button{
+			margin-top: 40px;
+			.btn, .btn-accent{width: 100%;}
+			@media(min-width:1200px){
+				.btn, .btn-accent{
+					height: 60px;
+				line-height: 60px;
+				font-size: 16px;
+				}
+				
+			}
+		}
+		.agree-text{
+			color: #fff;
+			margin-top: 20px;
+		}
+	}
+}

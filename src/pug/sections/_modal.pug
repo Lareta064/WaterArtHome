@@ -1,0 +1,14 @@
+//======== modal заказать звонок ============
+.modal-frame(frame-modal="modal-form")
+	.modal-frame-content
+		.form-wrapper
+			.modal-frame-close(frame-close)
+			form
+				.form-item
+					input(type="text" name="name" placeholder="Имя")
+				.form-item
+					input(type="text" name="phone" placeholder="Телефон")
+				
+				.form-button
+					button.btn-accent(type="submit") Заказать звонок
+					.agree-text Заполняя форму, Вы даете согласие на обработку персональных данных
