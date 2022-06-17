@@ -1,0 +1,165 @@
+section.prices
+	.container
+		.h2 актуальные цены
+		.column-grid
+			.column-grid__left
+				#price-tabs.price-tabs.transform-tabs
+					.custom-select
+						.custom-select__current
+							.select-icon
+							.select-field Очистка скважин
+							
+						.price-tab-btn.select-list
+							ul.tabs-button
+								li.current.tabs-button__item.active(data-role="1") Очистка скважин
+									
+								li.tabs-button__item(data-role="2") Годовое обслуживание
+									
+								li.tabs-button__item(data-role="3") Замена насосов
+									
+								li.tabs-button__item(data-role="4") Замена насосов ЭЦВ
+									
+								li.tabs-button__item(data-role="5") Ремонт скважин
+									
+								li.tabs-button__item(data-role="6") Гидродинамическая промывка водой
+									
+								li.tabs-button__item(data-role="7") Подъем насоса из скважин и колодцев
+			.column-grid__right
+				#price-tabs-desktop
+					.table
+						.table-head
+							p Вид работ
+							p Стоимость, руб
+						
+						//======== эти вкладки для табов отображаются на десктопе ============= 
+						.tabs-content-wrapper
+							
+							//======== контент для вкладки #1 =================
+							.tabs-content.table-body.active(data-content="1")
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Видеодиагностика
+									p 5 000
+								.table-row
+									p Гидроудар
+									p 3 000
+								.table-row
+									p Химочистка реагентами
+									p 5 000
+								.table-row
+									p Замена насоса
+									p от 9 000
+								.table-row
+									p Изменение действующей схемы
+									p 4 000
+								.table-row
+									p Регулировка реле, замена гидробака
+									p от 3 000
+								.table-row
+									p Итого в комплексе при глубине скважины до 40 метров
+									p от 13 000
+								.table-row
+									p Итого в комплексе при глубине скважины до 70 метров
+									p от 19 000
+								.table-row
+									p Итого в комплексе при глубине скважины до 110 метров
+									p от 24 000
+							
+							//======== контент для вкладки #2 =================
+							.tabs-content.table-body(data-content="2")
+								.table-row
+									p Аварийный выезд
+									p 15 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+							
+							//======== контент для вкладки #3 =================
+							.tabs-content.table-body(data-content="3")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+							
+							//======== контент для вкладки #4 =================
+							.tabs-content.table-body(data-content="4")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+							
+							//======== контент для вкладки #5 =================
+							.tabs-content.table-body(data-content="5")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+							
+							//======== контент для вкладки #6 =================
+							.tabs-content.table-body(data-content="6")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+							
+							//======== контент для вкладки #7 =================
+							.tabs-content.table-body(data-content="7")
+								.table-row
+									p Аварийный выезд
+									p 25 000
+								.table-row
+									p Аварийный выезд
+									p 5 000
+//================payment types ====================
+section.payment
+	.container
+		.payment-block-wrapper
+			.title-2 Способы оплаты
+			.payment-block 
+				.inter-20.text-accent.mb-30 Для физических лиц
+				.payment-types
+					a(href="#").payment-item
+						img(src="./img/ic-money.png", width="50" alt="alt")
+						p Наличными при получении
+					
+					a(href="#").payment-item
+						img(src="./img/ic-sber.png", width="50" alt="alt")
+						p Перевод на карту Сбербанка
+					
+					a(href="#").payment-item
+						img(src="./img/ic-card.png", width="50" alt="alt")
+						p Оплата по карте на&nbsp;сайте
+
+			.payment-block 
+				.inter-20.text-accent.mb-30 Для юридических лиц
+				.payment-types
+					.payment-item
+						img(src="./img/ic-rc.png", width="50" alt="alt")
+						p Расчетный <br>счет
+					
+					.payment-item
+						img(src="./img/ic-nalog.png", width="50" alt="alt")
+						p Оплата с НДС и без НДС
+						
+//============slogan============
+section.services-feedback
+	.container
+		.text-block
+			.text-24 Мы знаем полную технологию бурения, устройство грунтов в разных районах Москвы и Московской области, поэтому достигаем желаемого результата!
+			.text-24.text-bold У вас остались вопросы?
+		.center-align-mobile
+			button.btn-accent(type="button" frame-btn="modal-form") Оставить заявку 
+						

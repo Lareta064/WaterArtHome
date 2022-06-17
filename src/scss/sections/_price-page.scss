@@ -1,0 +1,60 @@
+.inner-page .prices{
+	.column-grid{
+		display: flex;
+		@media (max-width: 767px) {
+			display: block;
+		}
+	}
+	.column-grid__right, #price-tabs-desktop{
+		display: block!important;
+	}
+	.price-tabs{
+		.select-field{
+			color: $accent;
+		}
+		@media (max-width: 1199px) {
+			margin-bottom: 0;
+		}
+	}
+	.price-tab-btn .tabs-button {
+		margin-bottom: 0;
+		@media (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
+}
+.inner-page .payment{
+	.payment-types{
+		@media(min-width:768px){
+			grid-template-columns: 1fr 1fr 1fr ;}
+		}
+	.payment-item{
+		
+		@media(min-width:768px){
+		
+		display: flex;
+		column-gap: 20px;
+		align-items: flex-start;
+		max-width: 220px;
+		text-align: left;
+		}
+		
+		img{
+			flex-shrink: 0;
+		}
+		p{
+			font-size: 18px;
+			line-height: 1.167;
+			@media(max-width:1199px){
+				font-size: 16px;
+			}
+			@media(max-width:1199px){
+				font-size: 14px;
+			}
+		}
+	}
+	.payment-block + .payment-block{
+		margin-top: 60px;
+		@media(max-width:1199px){margin-top: 40px;}
+	}
+}

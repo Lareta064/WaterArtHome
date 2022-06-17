@@ -9,16 +9,17 @@
 		font-size: 30px;
 	}
 }
-.h2{
+.h2,.title-2{
 	font-size: 24px;
 	line-height: 1.167;
 	color: $dark;
-	text-transform: uppercase;
+	margin-bottom: 40px;
 	font-weight: 700;
 	@media(max-width:1364px){
 		font-size: 20px;
 	}
 }
+
 .h3{
 	font-family: $ff2;
 	font-style: normal;
@@ -34,6 +35,7 @@
 	color: $accent;}
 section .h2{
 	margin-bottom: 60px;
+	text-transform: uppercase;
 	@media (max-width: 1023px) {
 		margin-bottom: 40px;
 	}
@@ -51,10 +53,16 @@ section .h2{
 
 
 }
-.text-20, .medium-20, .bold-20{
+.text-20, .medium-20, .bold-20, .inter-20{
 	font-size: 20px;
 	line-height: 1.2;
 	@media (max-width: 767px) {
+		font-size: 18px;
+	}
+}
+.inter-20{
+	font-family: $ff2;
+	@media (max-width: 1199px) {
 		font-size: 18px;
 	}
 }
@@ -79,4 +87,10 @@ section .h2{
 .text-upper{
 	text-transform: uppercase;
 }
+.text-accent{
+	color: $accent;
+}
 .text-right{text-align: right;}
+.mb-30{
+	margin-bottom: 30px;
+}

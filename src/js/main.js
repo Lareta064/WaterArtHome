@@ -88,8 +88,12 @@ document.addEventListener("DOMContentLoaded", function (){
   if (servicesTabs) {
     pageTabs(servicesTabs, servicesTabs);
   }
-  if (priceTabs) {
+  if (priceTabContentDesktop) {
     pageTabs(priceTabs, priceTabContentDesktop);
+    
+  }
+   if (priceTabContentMobile) {
+    
     pageTabs(priceTabs, priceTabContentMobile);
   }
 
