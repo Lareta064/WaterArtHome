@@ -65,25 +65,3 @@
 div.about-text__visible[data-text-hide]{
 	padding-top: 40px;
 }
-.custom-text{
-	p{
-		font-size: 20px;
-		line-height: 1.2;
-		color: $dark;
-		
-		&+p{
-			margin-top: 1em;
-		}
-	}
-	.btn, button, .btn-accent{margin-top: 50px;}
-	@media (max-width: 1199px) {
-		p{font-size: 18px;}
-		.btn, button, .btn-accent{margin-top: 40px;}
-			
-		}
-	@media (max-width: 767px) {
-		
-		.btn, button, .btn-accent{margin-top: 30px;}
-			
-		}
-}
