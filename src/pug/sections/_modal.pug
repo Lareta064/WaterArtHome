@@ -1,18 +1,14 @@
-//======== modal  ============
+//======== modal заказать звонок ============
 .modal-frame(frame-modal="modal-form")
 	.modal-frame-content
 		.form-wrapper
 			.modal-frame-close(frame-close)
-				span +
-			
-			.modal-frame-title.text-center
-				.title-color Напишите нам
-			
-			form.form-send-message.w-100
+			form
 				.form-item
-					input(type="text" name="" placeholder="Имя")
+					input(type="text" name="name" placeholder="Имя")
 				.form-item
-					textarea(placeholder="Сообщение")
+					input(type="text" name="phone" placeholder="Телефон")
 				
-				.form-item.flex-end
-					button.btn.text-upper(type="submit") Отправить
+				.form-button
+					button.btn-accent(type="submit") Заказать звонок
+					.agree-text Заполняя форму, Вы даете согласие на обработку персональных данных

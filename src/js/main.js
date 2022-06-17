@@ -31,10 +31,15 @@ document.addEventListener("DOMContentLoaded", function (){
     });
     /*======== закрывать моб меню при ресайзе экрана ====== */
     window.addEventListener('resize', function () {
-      menuToggle.classList.remove('active');
-      mobileMenu.classList.remove('active');
+      if(this.innerWidth >1199){
+        if(mobileMenu.classList.contains('active')){
+           menuToggle.classList.remove('active');
+           mobileMenu.classList.remove('active');
       
-      bodyEl.classList.remove('noscroll');
+           bodyEl.classList.remove('noscroll');
+        }
+      }
+      
     });
 
 
