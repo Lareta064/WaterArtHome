@@ -1,0 +1,62 @@
+section.regions
+	.container
+		.h2 районы обслуживания
+		.regions-content
+			.regions-tabs#regions-tabs
+				ul.tabs-button
+					li.tabs-button__item.active(data-role="1") Апрелевка
+					li.tabs-button__item(data-role="2") Видное
+					li.tabs-button__item(data-role="3") Голицино
+					li.tabs-button__item(data-role="4") Дмитровский район
+					li.tabs-button__item(data-role="5") Домодедовский район
+					li.tabs-button__item(data-role="6") Звенигород
+					li.tabs-button__item(data-role="7") Зеленоградский район
+					li.tabs-button__item(data-role="8") Икшта
+					li.tabs-button__item(data-role="9") Истринский район
+					li.tabs-button__item(data-role="10") Красногорский район
+					li.tabs-button__item(data-role="11") Лобня
+					li.tabs-button__item(data-role="12") Люберецкий район
+					li.tabs-button__item(data-role="13") Москва
+					li.tabs-button__item(data-role="14") Мытищинский район
+					li.tabs-button__item(data-role="15") Наро-фоминский район
+					li.tabs-button__item(data-role="16") Нахабино
+					li.tabs-button__item(data-role="17") Ногинский район
+					li.tabs-button__item(data-role="18") Одинцовский район
+					li.tabs-button__item(data-role="19") Подольский район
+					li.tabs-button__item(data-role="20") Пушкино
+					li.tabs-button__item(data-role="21") Раменский район
+					li.tabs-button__item(data-role="22") Сергиево-Посадский район
+					li.tabs-button__item(data-role="23") Солнечногорский район
+					li.tabs-button__item(data-role="24") Троицк
+					li.tabs-button__item(data-role="25") Химкинский район
+					li.tabs-button__item(data-role="26") Черноголовка
+					li.tabs-button__item(data-role="27") Чеховский район
+					li.tabs-button__item(data-role="28") Щёлково
+
+				
+				//=========== БЛОК основной ==============
+				.regions-content__left
+					.tabs-content-wrapper
+						//========= контент первой вкладки ============
+						.tabs-content.tabs-content--block.active(data-content="1")
+							p Ногинский район
+							.contacts-points
+								iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3Ac011343002f0e4e608d08aa4c9853e3969d27690a4ea2ae3e9300f225f250974&source=constructor' width='100%' height='100%' frameborder='0')
+							
+							
+						//========= контент для вкладки Дополнительно ============
+						.tabs-content.tabs-content--block(data-content="2")
+							p Ногинский район
+							.contacts-points
+								iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3Ac011343002f0e4e608d08aa4c9853e3969d27690a4ea2ae3e9300f225f250974&source=constructor' width='100%' height='100%' frameborder='0')
+					.center-align
+						button.btn(type="button" frame-btn="modal-form") Получить консультацию
+
+//============slogan============
+section.services-feedback
+	.container
+		.text-block
+			.text-24 Мы знаем полную технологию бурения, устройство грунтов в разных районах Москвы и Московской области, поэтому достигаем желаемого результата!
+			.text-24.text-bold У вас остались вопросы?
+		.center-align-mobile
+			button.btn-accent(type="button" frame-btn="modal-form") Оставить заявку 

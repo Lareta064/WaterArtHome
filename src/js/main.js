@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function (){
   const priceTabContentDesktop = document.getElementById('price-tabs-desktop');
   const priceTabContentMobile = document.getElementById('price-tabs-mobile');
   const contactsTabs = document.getElementById('contacts-tabs');
+  const regionsTabs = document.getElementById('regions-tabs');
   if (servicesTabs) {
     pageTabs(servicesTabs, servicesTabs);
   }
@@ -93,14 +94,9 @@ document.addEventListener("DOMContentLoaded", function (){
     pageTabs(priceTabs, priceTabContentDesktop);
     
   }
-   if (priceTabContentMobile) {
-    
-    pageTabs(priceTabs, priceTabContentMobile);
-  }
-  if (contactsTabs) {
-    
-    pageTabs(contactsTabs, contactsTabs);
-  }
+  if (priceTabContentMobile) {pageTabs(priceTabs, priceTabContentMobile);}
+  if (contactsTabs) { pageTabs(contactsTabs, contactsTabs);}
+  if (regionsTabs) { pageTabs(regionsTabs, regionsTabs);}
 
   // ========= КАСТОМНЫЙ СЕЛЕКТ =============
 	const customSelect = document.querySelectorAll('.custom-select');

@@ -1,0 +1,28 @@
+extends ../layouts/layout.pug
+
+block content
+	include ../blocks/_mobile-menu
+	include ../sections/_header-inner
+	+navmenu([
+		{title: 'Главная', link: 'index.html'},
+		{title: 'Услуги', link: 'uslugi.html', addcl: 'active'},
+		{title: 'Цены', link: 'price.html'},
+		{title: 'Районы обслуживания', link: 'region.html'},
+		{title: 'Оформление заявки', link: 'zayavka.html'},
+		{title: 'Наши работы', link: 'portfolio.html'},
+		{title: 'Контакты', link: 'contacts.html'}
+		])
+	
+	main.inner-main
+		
+		include ../sections/_404
+		
+	include ../sections/_footer
+	include ../sections/_modal
+		
+		
+	
+	
+block variables
+	-var title = "Упс..., нет такой страницы!";
+	-var bodyCl = "inner-page";

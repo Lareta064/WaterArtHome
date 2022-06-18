@@ -1,0 +1,28 @@
+extends ../layouts/layout.pug
+
+block content
+	include ../blocks/_mobile-menu
+	include ../sections/_header-inner
+	+navmenu([
+		{title: 'Главная', link: 'index.html'},
+		{title: 'Услуги', link: 'uslugi.html'},
+		{title: 'Цены', link: 'price.html'},
+		{title: 'Районы обслуживания', link: 'region.html', addcl: 'active'},
+		{title: 'Оформление заявки', link: 'zayavka.html'},
+		{title: 'Наши работы', link: 'portfolio.html'},
+		{title: 'Контакты', link: 'contacts.html'}
+		])
+	
+	main.inner-main
+		
+		include ../sections/_region
+		
+	include ../sections/_footer
+	include ../sections/_modal
+		
+		
+	
+	
+block variables
+	-var title = "Районы обслуживания";
+	-var bodyCl = "inner-page";
