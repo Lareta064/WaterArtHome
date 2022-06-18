@@ -1,0 +1,49 @@
+section.contacts
+	.container
+		.h2 наши контакты
+		.contacts-row
+			.contacts-wrapper
+				a(href="mailto:info@voda-doma.ru ").text-link info@voda-doma.ru
+				a(href="tel:+79030014134").text-link +7 (903) 001-41-34
+				a(href="tel:+74958773814").text-link +7 (495) 877-38-14
+			.select-region
+				.inter-20.medium-600 Режим работы: #[span.text-accent круглосуточно]
+		.contacts-tabs.pt-100#contacts-tabs
+			ul.tabs-button
+				li.tabs-button__item.active(data-role="1") Москва
+				li.tabs-button__item(data-role="2") Красногорск
+				li.tabs-button__item(data-role="3") Мытищи
+				li.tabs-button__item(data-role="4") Апрелевка
+
+			
+			//=========== БЛОК основной ==============
+			.tabs-content-wrapper
+				//========= контент первой вкладки ============
+				.tabs-content.tabs-content--block.active(data-content="1")
+					p Мытищи, ул. Лётная, д.30 корпус 3
+					.contacts-points
+						iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3Ac011343002f0e4e608d08aa4c9853e3969d27690a4ea2ae3e9300f225f250974&source=constructor' width='100%' height='100%' frameborder='0')
+					
+				//========= контент для вкладки Дополнительно ============
+				.tabs-content.tabs-content--block(data-content="2")
+					p Мытищи, ул. Лётная, д.30 корпус 3
+					.contacts-points
+						iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3Ac011343002f0e4e608d08aa4c9853e3969d27690a4ea2ae3e9300f225f250974&source=constructor' width='100%' height='100%' frameborder='0')
+				//========= контент для вкладки Дополнительно ============
+				.tabs-content.tabs-content--block(data-content="3")
+					p Мытищи, ул. Лётная, д.30 корпус 3
+					.contacts-points
+						iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3Ac011343002f0e4e608d08aa4c9853e3969d27690a4ea2ae3e9300f225f250974&source=constructor' width='100%' height='100%' frameborder='0')
+				//========= контент для вкладки Дополнительно ============
+				.tabs-content.tabs-content--block(data-content="4")
+					p Мытищи, ул. Лётная, д.30 корпус 3
+					.contacts-points
+						iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3Ac011343002f0e4e608d08aa4c9853e3969d27690a4ea2ae3e9300f225f250974&source=constructor' width='100%' height='100%' frameborder='0')
+//============slogan============
+section.services-feedback
+	.container
+		.text-block
+			.text-24 Мы знаем полную технологию бурения, устройство грунтов в разных районах Москвы и Московской области, поэтому достигаем желаемого результата!
+			.text-24.text-bold У вас остались вопросы?
+		.center-align-mobile
+			button.btn-accent(type="button" frame-btn="modal-form") Оставить заявку 

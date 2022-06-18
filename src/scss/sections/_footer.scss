@@ -9,17 +9,20 @@
 		font-weight: 300;
 		@media (max-width:1199px) {
 			font-size: 14px;
-		}
-		
-	}
-	.footer-contacts{
-		display: flex;
-		flex-direction: column;
-	}
+		}		
+	}	
+	.contacts-wrapper{
+	
 	@media (max-width: 1199px) {
 		padding-top: 20px;
-		padding-bottom: 35px;
+		padding-bottom: 35px;}
 	}
+}
+
+.contacts-wrapper{
+	display: flex;
+	flex-direction: column;
+
 }
 .footer-content{
 	display: flex;

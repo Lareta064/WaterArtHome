@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function (){
   const priceTabs = document.getElementById('price-tabs');
   const priceTabContentDesktop = document.getElementById('price-tabs-desktop');
   const priceTabContentMobile = document.getElementById('price-tabs-mobile');
+  const contactsTabs = document.getElementById('contacts-tabs');
   if (servicesTabs) {
     pageTabs(servicesTabs, servicesTabs);
   }
@@ -95,6 +96,10 @@ document.addEventListener("DOMContentLoaded", function (){
    if (priceTabContentMobile) {
     
     pageTabs(priceTabs, priceTabContentMobile);
+  }
+  if (contactsTabs) {
+    
+    pageTabs(contactsTabs, contactsTabs);
   }
 
   // ========= КАСТОМНЫЙ СЕЛЕКТ =============
