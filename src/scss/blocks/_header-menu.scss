@@ -30,7 +30,7 @@
 		}
 	}
 	li.active a{
-		font-weight: 500;
+		font-family: $ff4;
 	}
 	
 }
@@ -44,7 +44,7 @@
 		font-weight: 500;
 		font-size: 20px;
 		line-height: 23px;
-		font-family: $ff1;
+		font-family: 'Roboto Medium';
 	}
 	&__nav  li+li{margin-top: 40px;}
 	&__nav li.active a{

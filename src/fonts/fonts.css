@@ -16,6 +16,7 @@
     font-weight: normal;
     font-style: normal;
     }
+
 @font-face {
     font-family: 'Roboto Medium';
     src: url('Roboto-Medium.eot');
@@ -25,7 +26,15 @@
     font-weight: normal;
     font-style: normal;
     }
-
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('Roboto-Bold.eot');
+    src: url('Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-Bold.woff') format('woff'),
+    url('Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 /*================  font-family: 'Inter'===================  */
 @font-face {
     font-family: 'Inter';

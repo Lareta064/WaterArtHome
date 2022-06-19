@@ -33,7 +33,7 @@ input[type="checkbox"],input[type="radio"]{
 	span+p{margin-left: 30px;}
 	p{
 		font-size: 18px;
-		font-weight: 300;
+		font-family: $ff1;
 	}
 	@media (max-width: 767px) {
 		span+p{margin-left: 20px;}
@@ -187,7 +187,7 @@ input[type="checkbox"]:checked~.fake-checkbox{
 .agree-text{
 	font-size: 14px;
 	color: $accent;
-	font-weight: 300;
+	font-family: $ff1;
 	@media (max-width: 1199px) {
 		font-size: 12px;
 	}

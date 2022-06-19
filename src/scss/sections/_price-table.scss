@@ -34,7 +34,7 @@
 		border:0 ;
 		p{
 			font-size: 20px;
-			font-weight: 300;
+			font-family: $ff1;
 			line-height: 1;
 			@media (max-width: 1199px) {
 			 font-size: 16px;
@@ -128,7 +128,7 @@
 	.price-tab-btn .tabs-button{
 		display: block;
 		padding: 30px 40px;
-		border: 1px solid $accent;
+		border: 1px solid rgba(46, 89, 132, 0.5);
 		border-radius: 10px;
 		margin-bottom: 35px;
 		@media (max-width: 1199px) {
