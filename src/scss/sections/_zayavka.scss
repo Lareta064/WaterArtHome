@@ -1,35 +1,39 @@
 .quiz-wrapper{
 	position: relative;
 	height: 485px;
-	@media(max-width:1364px){
-		height: 715px;
+	@media(max-width:1199px){
+		height: auto;
 	}
 }
 #quiz-plate-1{
 	.btn-prev{opacity: 0; pointer-events: none;}
+	.btn-prev{display: none;}
+	.btn-next{
+		margin-bottom: 37px;
+		@media (max-width: 1199px) {
+			margin-bottom: 0;
+		}
+	}
+	
+}
+.quiz-plate .checkbox-group{
+	height: auto;
+	min-height: 111px;
+	
 }
 .quiz-plate{
 	height: 485px;
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
+	display: none;	
 	z-index: -1;
 	background-color: #fff;
 	&.active{
 		display: block;
 		z-index: 1;
-		
-		
 	}
-	@media(max-width:1364px){
-		height: 715px;
+	@media(max-width:1199px){
+		height: auto;
 	}
-	@media(max-width:1364px){
-		height:auto;
-	}
+	
 	.page-form__content{
 		display: flex;
 		flex-direction: column;
@@ -39,11 +43,16 @@
 		
 	}
 	.quiz-questions{
-		height: 250px;
+		min-height: 250px;
 		display: flex;
 		flex-direction: column;
+		height: auto;
 		@media (max-width: 1199px) {
-			height: auto;
+			min-height: 190px;
+			
+		}
+		@media (max-width: 767px) {
+			
 			
 		}
 
@@ -69,12 +78,13 @@
 		align-items: center;
 		margin-bottom: 50px;
 		min-height: 25px;
+		margin-bottom: 30px;
 		p{
 			font-size: 18px;
 			font-weight: 300;
 		}
 		@media (max-width: 1199px) {
-		margin-bottom: 28px;
+		
 		p{display: none;}
 		}
 	}
@@ -102,13 +112,13 @@
 				font-size: 16px;
 				width: 280px;
 			}
-			@media (max-width: 767px) {min-width: 240px; max-width: 280px; width: 100%;}
+			@media (max-width: 767px) {width: 240px; max-width: 280px; width: 100%;}
 		}
-		@media (max-width: 1364px) {
+		@media (max-width: 1199px) {
 			flex-direction: row;
 			align-items: center;
 			column-gap: 40px;
-			margin-top: 60px;
+			// margin-top: 60px;
 			.btn-prev{margin-top: 0;}
 		}
 		@media (max-width: 767px) {
@@ -162,7 +172,12 @@
 		.page-form .form-wrapper {
    			 grid-template-columns: 217px 217px;
     		 row-gap: 23px;
-}
+	}
+	}
+	@media (max-width: 768px){
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 }
