@@ -29,6 +29,13 @@
 		}
 		
 	}
+	&-content.offset-left{
+		position: relative;
+		left: -8.5px;
+		@media (max-width: 1199px) {
+		left: 0;
+		}
+	}
 	&-btn{
 		margin-left: 57px;
 		@media (max-width: 1199px) {
